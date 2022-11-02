@@ -25,8 +25,8 @@ I've had about 14 years of formal schooling now (high school and university), an
 
 ## Derivative of a simple function
 * The derivative of a function is the slope of the tangent line at a point or the rate of change of the function at a point.
-    - Andrej makes the assumption that we had a calculus class, but still goes into great detail about what the derivative of a function is.
-    ![differentiability of a function](images/Differentiablility.png)
+    - Andrej makes the assumption that we had a calculus class, but still goes into great detail about what the derivative of a function is.<br />
+    ![differentiability of a function](images/Differentiablility.png)<br />
     He uses the differentiability defenition of a function to show how a single and multi-variable input might affect the derivative of a function.
 * In progress...
 
