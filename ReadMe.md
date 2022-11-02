@@ -25,9 +25,13 @@ I've had about 14 years of formal schooling now (high school and university), an
 
 ## Derivative of a simple function
 * The derivative of a function is the slope of the tangent line at a point or the rate of change of the function at a point.
-    - Andrej makes the assumption that we had a calculus class, but still goes into great detail about what the derivative of a function is.<br />
-    ![differentiability of a function](images/Differentiablility.png)<br />
+    - Andrej makes the assumption that we had a calculus class, but still goes into great detail about what the derivative of a function is.<br /><br />
+    ![differentiability of a function](images/Differentiablility.png)<br /><br />
     He uses the differentiability defenition of a function to show how a single and multi-variable input might affect the derivative of a function.
+
+## Starting the core Value object of micrograd and its visualization
+* The core object of micrograd is the Value object. It is a simple object that has a value and a gradient. The gradient is the derivative of the value with respect to the input of the function. The gradient is initialized to 0 and is updated by the backward() function.
+    - Andrej walks throuhg implementing the Value object and then shows how it does computations with different operations we specify.
 * In progress...
 
 
