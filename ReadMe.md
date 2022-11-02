@@ -32,6 +32,12 @@ I've had about 14 years of formal schooling now (high school and university), an
 ## Starting the core Value object of micrograd and its visualization
 * The core object of micrograd is the Value object. It is a simple object that has a value and a gradient. The gradient is the derivative of the value with respect to the input of the function. The gradient is initialized to 0 and is updated by the backward() function.
     - Andrej walks throuhg implementing the Value object and then shows how it does computations with different operations we specify.
+    - He uses the graphviz library to visualize the computation graph of the Value object. This is a great way to visualize the computation graph and see how the gradient is computed.<br /><br />
+    ![Value object](images/Value.jpeg)<br /><br />
+    This graph is also a great representation of forward propogation, then if we want to do backpropogation we just need to reverse the arrows.
+
+## Manual backpropogation
+  
 * In progress...
 
 
