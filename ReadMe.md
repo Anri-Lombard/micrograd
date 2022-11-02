@@ -23,4 +23,5 @@ I've had about 14 years of formal schooling now (high school and university), an
 
 
 # References
-* [Andrej Karpathy's Micrograd](https://github.com/karpathy/micrograd)
+* [Andrej Karpathy's Micrograd Project](https://github.com/karpathy/micrograd)
+* [Andrej Karpathy's Micrograd Video](https://www.youtube.com/watch?v=Z3uqyXnol9M)
