@@ -19,7 +19,7 @@ I've had about 14 years of formal schooling now (high school and university), an
         - Compute the output of a neural network given an input and a set of weights
     2. Backpropogation
         - Backpropogation is the process of computing the gradient of the loss function with respect to the weights of the neural network. This is done by computing the gradient of the loss function with respect to the output of the neural network, and then computing the gradient of the output with respect to the weights of the neural network. This is done recursively until the gradient of the loss function with respect to the input of the neural network is computed.
-* Andrej claims that Micrograd is the backbone of all machine learing and that the rest is just added for effiency and convenience. This is why Micrograd is so important to understand.
+* Andrej claims that Micrograd is all you need to train neural networks and the rest is just added for effiency and convenience. This is why Micrograd is so important to understand.
     - A good example is the use of tensors (which we do not use in micrograd) which are simply used to do many scalar operations that micrograd does in parallel.
     - For such a fundamentally important piece of machine learning, it is suprisingly simple. There are literally only 2 python files.
 
@@ -34,10 +34,25 @@ I've had about 14 years of formal schooling now (high school and university), an
     - Andrej walks throuhg implementing the Value object and then shows how it does computations with different operations we specify.
     - He uses the graphviz library to visualize the computation graph of the Value object. This is a great way to visualize the computation graph and see how the gradient is computed.<br /><br />
     ![Value object](images/Value.jpeg)<br /><br />
-    This graph is also a great representation of forward propogation, then if we want to do backpropogation we just need to reverse the arrows.
 
-## Manual backpropogation
-  
+## Backpropogation
+* A lot of calculus is used to calculate partial derivatives (thank goodness I study math! Look mom, I'm using it!)
+    - To do backprop, we use the chain rule to calculate the effect of each operation on the gradient of the output.
+* Neurons are input neurons, hidden neurons, and output neurons. The input neurons are the input to the neural network, the hidden neurons are the neurons in the hidden layers, and the output neurons are the output of the neural network.
+    - Neurons have complicated mathematical representations, but we have a simple representation of a neuron that is just a Value object with a weight and a bias.
+    - We take all the inputs through an activation function (in this case a tanh function) to get the output of the neuron.
+    - The result is just the dot product of the inputs and the weights of the neuron, plus the bias of the neuron.
+* We implemented backpropogation manually for, then implemented it to do it automatically, at least for one neuron.
+    - We implemented the backward() function for each operation to do backpropogation automatically, basically.
+    - To do it automatically, we built a DAG (directed acyclic graph) of the computation graph. This is a graph that shows the order of operations and the dependencies between operations.
+
+## Putting it together
+* We implemented all the operations necessary to do forward and backpropogation with any operation (+, -, /, *, tanh).
+    - Andrej is very adament on doing the basics, so we delved into derivative rules and breaking up tanh into an equation using the hyperbolic tangent function.
+      - He did this to show that it doesn't matter how complicated the function we use is, as long as we get the correct forward pass and backpropogation, we can use any appropriate function.
+* Andrej showed how Pytorch does it, which basically does what Micrograd does with tensors, which allow for parallel computation of many scalar operations. Tensors are arrays of scalar values.
+
+## Building a neural net library (multi-layer perceptron)
 * In progress...
 
 
