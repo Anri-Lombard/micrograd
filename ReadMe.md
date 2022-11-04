@@ -3,7 +3,11 @@
 Micrograd is a tiny, self-contained, and easy-to-understand deep learning library. It's a great place to start if you want to learn how deep learning works under the hood. It is an autograd library, which means that it can automatically compute gradients for you. It is also a neural network library, which means that it can compute gradients for you and update the weights of your neural network.
 
 ## Review of video and project
-* In progress...
+Andrej is one of my most prominent role-models as an egineer, leader, and now teacher. He describes his joy for teaching as a means to make more "Happy Humans" and I think that is a great goal to have. I have been following his work for a while now and I am very excited to be able to watch this video and build alongside him. As nascent engineers we are very lucky to have access to such a great resource for free.<br />
+<br />
+This video shows the basics of what it takes to train a neural network. All the padding for efficiency reasons are removed and the complex training methods are discarded to leave only the core of it all. This is a great way to get a feel for what is going on under the hood. As a beginner, this course might be slightly daunting if you've never heard the words "gradient descent" before, but prior knowledge won't be needed as Andrej explains each concept thoroughly and avoids jargon.<br />
+<br />
+If your expectations of this video is high, you won't be dissapointed. Andrej has a relatively fast pace compared to other videos and courses, but keeping up with his speed is super fun and fufilling. A huge thanks to Andrej!
 
 ## Tips I found useful in learning this course
 I've had about 14 years of formal schooling now (high school and university), and have countless wasted hours under my belt. Over time I realized how important online learning is and figured out what works with iteration.
@@ -25,15 +29,19 @@ I've had about 14 years of formal schooling now (high school and university), an
 
 ## Derivative of a simple function
 * The derivative of a function is the slope of the tangent line at a point or the rate of change of the function at a point.
-    - Andrej makes the assumption that we had a calculus class, but still goes into great detail about what the derivative of a function is.<br /><br />
-    ![differentiability of a function](images/Differentiablility.png)<br /><br />
+    - Andrej makes the assumption that we had a calculus class, but still goes into great detail about what the derivative of a function is.<br />
+    - <br />
+    ![differentiability of a function](images/Differentiablility.png)<br />
+    <br />
     He uses the differentiability defenition of a function to show how a single and multi-variable input might affect the derivative of a function.
 
 ## Starting the core Value object of micrograd and its visualization
 * The core object of micrograd is the Value object. It is a simple object that has a value and a gradient. The gradient is the derivative of the value with respect to the input of the function. The gradient is initialized to 0 and is updated by the backward() function.
     - Andrej walks throuhg implementing the Value object and then shows how it does computations with different operations we specify.
-    - He uses the graphviz library to visualize the computation graph of the Value object. This is a great way to visualize the computation graph and see how the gradient is computed.<br /><br />
-    ![Value object](images/Value.jpeg)<br /><br />
+    - He uses the graphviz library to visualize the computation graph of the Value object. This is a great way to visualize the computation graph and see how the gradient is computed.<br />
+    - <br />
+    ![Value object](images/Value.jpeg)<br />
+    <br />
 
 ## Backpropogation
 * A lot of calculus is used to calculate partial derivatives (thank goodness I study math! Look mom, I'm using it!)
@@ -53,7 +61,19 @@ I've had about 14 years of formal schooling now (high school and university), an
 * Andrej showed how Pytorch does it, which basically does what Micrograd does with tensors, which allow for parallel computation of many scalar operations. Tensors are arrays of scalar values.
 
 ## Building a neural net library (multi-layer perceptron)
-* In progress...
+* First we impliment a neuron class and implement the forward pass and backpropogation functionality.
+    - We then implement a Layer class that has a list of neurons, then the MLP class that has a list of layers.
+
+
+## Training the neural net
+* We added parameters to the Neuron, Layer, and MLP classes, then performed gradient descent on a tiny, makeshift dataset.
+    - Andrej showed how easy it is to overstep the gradient descent and overshoot the minimum, which is what makes it a subtle art to get the right learning rate.
+    - Andrej made the exact mistake he tweeted in 2018 to avoid, which was pretty funny and insightful. We need to .zero_grad() before .backward() to avoid accumulating gradients.
+
+## Summary
+A neural network takes in inputs, does a forward pass to make predictions, then does a backpropogation to update the weights of the neural network so that it makes even more accurate predictions (known as gradient descent). This is done iteratively until the neural network is good enough to make accurate predictions.<br />
+<br />
+This is done in many different ways, but all of them make use of these fundamentals detailed in Micrograd. The only difference is how they are implemented, and how they are used to train neural networks. Micrograd is a great way to understand the fundamentals of neural networks and how they are trained.
 
 
 # References
