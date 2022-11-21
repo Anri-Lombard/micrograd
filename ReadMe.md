@@ -9,7 +9,7 @@ This video shows the basics of what it takes to train a neural network. All the 
 <br />
 If your expectations of this video are high, you won't be disappointed. Andrej has a relatively fast pace compared to other videos and courses, but keeping up with his speed is super fun and fulfilling. A huge thanks to Andrej!
 
-## Tips I found useful in learning this course
+## Tips I found useful in learning to build this project
 I've had about 14 years of formal schooling now (high school and university), and have countless wasted hours under my belt. Over time I realized how important online learning is and figured out what works with iteration.
 
 1. Watch a section of the video without coding, taking notes if that helps you follow along (as long as you focus - notes are not entirely necessary, but help me get info inside my head)
