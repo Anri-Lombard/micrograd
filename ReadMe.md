@@ -2,9 +2,15 @@
 
 Micrograd is a tiny, self-contained, and easy-to-understand deep-learning library. It's a great place to start if you want to learn how deep learning works under the hood. It is an Autograd library, which means that it can automatically compute gradients for you. It is also a neural network library, which means that it can compute gradients for you and update the weights of your neural network.
 
+## Andrej-approved Notes
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very nice notes! 👍👍</p>&mdash; Andrej Karpathy (@karpathy) <a href="https://twitter.com/karpathy/status/1594537380144623616?ref_src=twsrc%5Etfw">November 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+
+
 ## Review of video and project
 Andrej is one of my most prominent role models as an engineer, leader, and now teacher. He describes his joy in teaching as a means to make more "Happy Humans" and I think that is a great goal to have. I have been following his work for a while now and I am very excited to be able to watch this video and build alongside him. As nascent engineers, we are very lucky to have access to such a great resource for free.<br />
 <br />
+
 This video shows the basics of what it takes to train a neural network. All the padding for efficiency reasons is removed and the complex training methods are discarded to leave only the core of it all. This is a great way to get a feel for what is going on under the hood. As a beginner, this course might be slightly daunting if you've never heard the words "gradient descent" before, but prior knowledge won't be needed as Andrej explains each concept thoroughly and avoids jargon.<br />
 <br />
 If your expectations of this video are high, you won't be disappointed. Andrej has a relatively fast pace compared to other videos and courses, but keeping up with his speed is super fun and fulfilling. A huge thanks to Andrej!
