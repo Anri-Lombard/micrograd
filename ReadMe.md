@@ -3,7 +3,7 @@
 Micrograd is a tiny, self-contained, and easy-to-understand deep-learning library. It's a great place to start if you want to learn how deep learning works under the hood. It is an Autograd library, which means that it can automatically compute gradients for you. It is also a neural network library, which means that it can compute gradients for you and update the weights of your neural network.
 
 ## Andrej-approved Notes
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very nice notes! 👍👍</p>&mdash; Andrej Karpathy (@karpathy) <a href="https://twitter.com/karpathy/status/1594537380144623616?ref_src=twsrc%5Etfw">November 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very nice notes! 👍👍</p>&mdash; Andrej Karpathy (@karpathy) <a href="https://twitter.com/karpathy/status/1594537380144623616?ref_src=twsrc%5Etfw">November 21, 2022</a></blockquote>
 <br />
 
 
