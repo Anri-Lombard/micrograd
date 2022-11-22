@@ -19,7 +19,7 @@ If your expectations of this video are high, you won't be disappointed. Andrej h
 I've had about 14 years of formal schooling now (primary/high school and university), and have countless wasted hours under my belt. Over time I realized how important online learning is and figured out what works with iteration.
 
 1. Watch a section of the video without coding, taking notes if that helps you follow along (as long as you focus - notes are not entirely necessary, but help me get info inside my head)
-Go through the code step by step without video, trying to explain and label each step in your own words. If you get stuck go back to see what Andrej said.
+2. Go through the code step by step without video, trying to explain and label each step in your own words. If you get stuck go back to see what Andrej said.
 3. (Optional. Doing steps 1 and 2 is the 20% that will give you 80% of the learning, this is just an extra few percent) Try and implement it on your own, without his code.
 
 # Building Micrograd
